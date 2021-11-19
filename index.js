@@ -10,7 +10,7 @@ function request(q) {
 
         axios({
             method: 'PATCH',
-            url: `https://bogutskii-ticket.herokuapp.com/event/${idPatch}`,
+            url: .........${idPatch}`,
             data: {
                 name: readlineSync.question(' Write name: '),
                 description: readlineSync.question(' Write description: '),
@@ -26,7 +26,7 @@ function request(q) {
 
         axios({
             method: 'POST',
-            url: `https://bogutskii-ticket.herokuapp.com/event/`,
+             url: .........}`,
             data: {
                 name: readlineSync.question(' Write name: '),
                 description: readlineSync.question(' Write description: '),
@@ -44,7 +44,7 @@ function request(q) {
 
         axios({
             method: 'DELETE',
-            url: `https://bogutskii-ticket.herokuapp.com/event/${idDelete}`
+            url: `\/${idDelete}`
         })
             .then(res => console.log(res))
             .catch(err => console.log('err Delete', err))
@@ -54,7 +54,7 @@ function request(q) {
     if (q === 'GET') {
         axios({
             method: 'POST',
-            url: `https://bogutskii-ticket.herokuapp.com/event/search`
+            url: `rch`
         })
             .then(res => console.log(res.data.payload))
             .catch(err => console.log('err Get', err))
